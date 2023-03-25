@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+function lol()
+{
+    var ig=document.getElementById("name").value;
+    if(ig.length==0)
+    {
+       document.getElementById("para").innerHTML="*Name can't be blank";
+    }
+   
+}
+function date()
+{
+    var ig=document.getElementById("day").value;
+    if(ig==0)
+    {
+       document.getElementById("err").innerHTML="*Date can't be blank";
+    }
+}
+    function mail()
+{
+    var ig=document.getElementById("em").value;
+    if(ig==0)
+    {
+       document.getElementById("error").innerHTML="*Please enter your mail";
+    }
+   
+}
+</script>
+</head>
+<body>
+    Name:
+<input type="text" id="name"><button onclick="lol()">Enter</button>
+<p id="para" style="color:red">
+    </p>
+    Gender:<select id="Gender">
+        <option id="Male">Male</option>
+        <option id="Female">Female</option>
+        <option id="Others">Prefer not to say</option>
+        </select>
+        <br><br>
+        DOB:
+        <input type="date" id="day"><button onclick="date()">Enter</button>
+        <p id="err" style="color:red">
+            </p>
+            Mail:
+            <input type="email" id="em"><button onclick="mail()">Enter</button>
+            <p id="error" style="color:red">
+                </p>
+                <a href="file:///C:/Users/SMART%20ENERGY%20METER/Desktop/sketch/congrats.html"><button>Submit</button></a>
+    </body>
+</html>
