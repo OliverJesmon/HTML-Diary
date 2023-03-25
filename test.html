@@ -2,12 +2,18 @@
 <html>
     <head>
         <script type="text/javascript">
-function lol()
+             function load()//pop up window "Nice to meet you"
+            {
+                var char="Hello";//onload in the body tag is a js keyword
+                alert("Nice to meet you!");
+                document.getElementById("value").innerHTML=char+" "+prompt("What does people call you in short?","Alias");//Javascript pop up input or prompt
+            }
+function lol()//if user left the blankspace in input 
 {
-    var ig=document.getElementById("name").value;
+    var ig=document.getElementById("name").value;//name is the variable
     if(ig.length==0)
     {
-       document.getElementById("para").innerHTML="*Name can't be blank";
+       document.getElementById("para").innerHTML="*Name can't be blank";//document.getElementById takes the input and para outputs the textin paragraph
     }
    
 }
@@ -30,7 +36,8 @@ function date()
 }
 </script>
 </head>
-<body>
+<body onload="load()">
+    <p id="value"></p>
     Name:
 <input type="text" id="name"><button onclick="lol()">Enter</button>
 <p id="para" style="color:red">
