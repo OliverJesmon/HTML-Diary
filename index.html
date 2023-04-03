@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>index</title>
+ <meta https-equiv="content-type" content="text/html" charset="utf-8">
+ <meta name="description" content="sample-website"/>
+ <meta name="keyword" content="sample-website,website tutorial,web development,web2,St.Joseph Engineering College,Vamanjoor,Mangalore"/>
+ <meta name="author" content="Oliver Jesmon D Souza"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="c2.css">
+<script type="text/javascript">
+    function aler()
+    {
+        var input2=document.getElementById("fname").value;
+        var input3=document.getElementById("lname").value;
+        var input4=document.getElementById("add").value;
+        var input1=document.getElementById("field").value;
+        var af=window.prompt("Your number is:"+input1+
+        "\nYour name:"+input2+" "+input3+
+        "\nYour address is:"+input4+"\nAny changes required?Yes/No");
+        if(af=="yes"||af=="Yes"){
+        input2=prompt("Enter first name:");
+          input3=prompt("Enter last name:");
+         input4=prompt("Enter address:");
+          input1=prompt("Enter Phone no.:");
+          window.alert("Your number is:"+input1+
+        "\nYour name:"+input2+" "+input3+
+        "\nYour address is:"+input4);
+        }
+       
+    }
+    </script>
+</head>
+<body>
+<h1>Welcome</h1>
+<div class="container">
+<h2>About</h2>
+<br><br>
+<p style="clear:left">Identify the electrical and electronic devices which are connected /disconnected to the AC supply in the given location.
+Find out the power ratings of each AC powered device equipment. 
+Estimate the number of devices.
+The sum of the power ratings of the appliances present in the given location gives the electrical peak load of given area.
+</p>
+<form>
+    First name:<br>
+    <input type="text" id="fname"/><br>
+    Last name:<br>
+    <input type="text" id="lname"/><br>
+    Address:<br>
+    <input type="text" id="add"/><br>
+    Phone.No:<br>
+    <input type="text" pattern="[+0-9]{13}" id="field" title="10-digit mobile.no" required/><br><br><button onclick="aler()">Submit</button>
+    </form>
+
+</div>
+<div class="sidebar">
+
+</div>
+<div class="footer">
+    &copy;2023 Oliver Jesmon@ St.Joseph Engineering College,Vamanjoor
+<ul class="Column2">
+
+<h3>Social media</h3>
+</ul>
+
+<br>
+        <li><img src="https://img.icons8.com/ultraviolet/40/null/instagram-new.png"/><a href="https://www.instagram.com/oliverjesmon">instagram</a></li>
+        <li><img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/null/external-github-with-cat-logo-an-online-community-for-software-development-logo-tritone-tal-revivo.png"/><a href="https://www.github.com/Oliverjesmon">GitHub</a></li>
+</div>
+</body>
+</html>
